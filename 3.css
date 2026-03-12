@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Source Code Pro", monospace;
+    background-image: url(https://i.pinimg.com/1200x/71/c0/f4/71c0f492f97c86f23b1bd9c450179d8e.jpg);
+    color: aliceblue;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: chartreuse;
+}
+h1, h2 {
+    display: table;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.4); /* Делаем прозрачнее */
+    backdrop-filter: blur(10px);    /* Размываем фон за блоком */
+    border: 1px solid rgba(127, 255, 0, 0.3); /* Тонкая, светящаяся граница */;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: chartreuse;
+}
+.photo0 {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.4); /* Делаем прозрачнее */
+    backdrop-filter: blur(10px);    /* Размываем фон за блоком */
+    border: 1px solid rgba(127, 255, 0, 0.3); /* Тонкая, светящаяся граница */;
+}
+
+.T, .T1{
+    display: table;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.4); /* Делаем прозрачнее */
+    backdrop-filter: blur(10px);    /* Размываем фон за блоком */
+    border: 1px solid rgba(127, 255, 0, 0.3); /* Тонкая, светящаяся граница */;
+    max-width: 800px;
+}
+
+#T {
+    background: rgba(0, 0, 0, 0.4); /* Делаем прозрачнее */
+    backdrop-filter: blur(10px);    /* Размываем фон за блоком */
+    border: 1px solid rgba(127, 255, 0, 0.3); /* Тонкая, светящаяся граница */;
+    border: 2px solid chartreuse;
+    width:fit-content;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.R, #U {
+    display: table;
+    margin: 0 auto 30px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+#U1 {
+    display: table;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.R a, #U a, #U1 a {
+    color: chartreuse;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 150ms ease;
+}
+.R a:hover, #U a:hover, #U1 a:hover {
+    transform: scale(1.1);
+    color: white;
+    text-shadow: 0 0 10px chartreuse;
+}
+
+#U a {
+    color: chartreuse;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 150ms ease;
+}
+
+#U a:hover {
+    transform: scale(1.1);
+    color: white;
+    text-shadow: 0 0 10px chartreuse;
+}
+
+.character-box {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.photo1 {
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+    border: 5px solid chartreuse;
+    border-radius: 15px;
+}
+
+.character-box p {
+    background: rgba(0, 0, 0, 0.4); /* Делаем прозрачнее */
+    backdrop-filter: blur(10px);    /* Размываем фон за блоком */
+    border: 1px solid rgba(127, 255, 0, 0.3); /* Тонкая, светящаяся граница */;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 0;
+    max-width: 800px;
+}
+
+.R1 {
+    display: table;
+    margin: 0 auto 30px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+#rick-pic {
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+#rick-pic:active {
+    transform: scale(0.9);
+}
+
+.bubble {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: #00ff00;
+    padding: 10px 15px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00ff00;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+.photo2 {
+    width: 400px;
+    height: auto;
+    float: left;
+    border: 5px solid chartreuse;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+a {
+    color: chartreuse;
+}
+.c1 {
+    text-align: center;
+}
+.R1, p, ol{
+    text-shadow: chartreuse 0 0 3px;
+}
+hr {
+    color: chartreuse;
+}
+
+.CR {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+/* Обращаемся напрямую к списку, так как ID "U" стоит на теге <ol> */
+#U {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;         /* Увеличил до 120px, чтобы текст не слипался */
+    width: fit-content;          /* Задаем фиксированную ширину, чтобы было место для 2 колонок */
+    list-style-position: inside;
+    padding: 5px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4); /* Делаем прозрачнее */
+    backdrop-filter: blur(10px);    /* Размываем фон за блоком */
+    border: 1px solid rgba(127, 255, 0, 0.3); /* Тонкая, светящаяся граница */;
+}
+
+.c1, .R {
+    background: rgba(0, 0, 0, 0.4); /* Делаем прозрачнее */
+    backdrop-filter: blur(10px);    /* Размываем фон за блоком */
+    border: 1px solid rgba(127, 255, 0, 0.3); /* Тонкая, светящаяся граница */;
+}
+
+#U li {
+    width: 90px;          /* Ширина одного столбика */
+    padding-right: 15px;
+}
+.photo1, .photo2, .photo0 {
+    position: relative; /* Позволяет работать z-index */
+    z-index: 2;        /* Выводит картинку на передний план */  /* На всякий случай отключаем тени для самих изображений */
+}
+
+#U li {
+    width: 140px;           /* Ограничиваем ширину одного пункта */
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+#CR1, #CR2 {
+    flex: 1;               /* Заставляет оба блока делить пространство поровну */
+    max-width: 400px;      /* Чтобы они не становились слишком огромными */
+}
+#CR2 h2 {
+    display: block;
+    text-align: center;
+    width: fit-content;
+}
+#U {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+}
+
+#U1 li {
+    margin-bottom: 10px;
+}

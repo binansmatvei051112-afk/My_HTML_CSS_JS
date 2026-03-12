@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    background-image: url(https://i.pinimg.com/1200x/71/c0/f4/71c0f492f97c86f23b1bd9c450179d8e.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: chartreuse;
+}
+
+h1, h2 {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(127, 255, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.season-page {
+    text-align: center;
+}
+
+.nav-container {
+    margin: 20px 0;
+}
+
+.back-link {
+    display: inline-block;
+    color: chartreuse;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid chartreuse;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.episodes-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.episode-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    min-width: 320px;
+}
+
+.episode-box {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 2px solid chartreuse;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(127, 255, 0, 0.2);
+}
+
+.episode-box h3 {
+    color: chartreuse;
+    margin-top: 0;
+}
+
+.episode-box p {
+    color: #fff;
+    font-size: 14px;
+    background: none;
+    border: none;
+    backdrop-filter: none;
+    padding: 0;
+}
+
+.watch-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: chartreuse;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 8px chartreuse;
+}
