@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4.css">
+    <title>1 Сезон — Рик и Морти</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Source Code Pro", monospace;
+            background-image: url(https://i.pinimg.com/1200x/71/c0/f4/71c0f492f97c86f23b1bd9c450179d8e.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            color: chartreuse;
+        }
+
+        h1, h2 {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(127, 255, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .season-page {
+            text-align: center;
+        }
+
+        .nav-container {
+            margin: 20px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: chartreuse;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid chartreuse;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 5px;
+        }
+
+        .episodes-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .episode-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 45%;
+            min-width: 320px;
+        }
+
+        .episode-box {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border: 2px solid chartreuse;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(127, 255, 0, 0.2);
+        }
+
+        .episode-box h3 {
+            color: chartreuse;
+            margin-top: 0;
+        }
+
+        .episode-box p {
+            color: #fff;
+            font-size: 14px;
+            background: none;
+            border: none;
+            backdrop-filter: none;
+            padding: 0;
+        }
+
+        .watch-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: chartreuse;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-shadow: 0 0 8px chartreuse;
+        }
+    </style>
+</head>
+<body class="season-page">
+
+    <div class="nav-container">
+        <a href="index.html" class="back-link">← Вернуться на главную</a>
+    </div>
+
+    <h1 class="main-title">1 Сезон</h1>
+
+    <div class="episodes-wrapper">
+        <div class="episode-column">
+            <div class="episode-box">
+                <h3>1 серия: Пилот</h3>
+                <p>Рик берет Морти в первое путешествие в Измерение 35-C за семенами Мега-деревьев. Пока они выживают, родители спорят о влиянии деда.</p>
+                <a href="https://adultswim.ru/rick-and-morty/season-1/episode-1" target="_blank" class="watch-link">Смотреть серию</a>
+            </div>
+
+            <div class="episode-box" id="A1">
+                <h3>2 серия: Пёс-газонокосильщик</h3>
+                <p>Пес Снафлс становится разумным и строит армию собак. Рик и Морти тем временем проникают в сны учителя в стиле «Начала».</p>
+                <a href="https://adultswim.ru/rick-and-morty/season-1/episode-2" target="_blank" class="watch-link">Смотреть серию</a>
+            </div>
+
+            <div class="episode-box" id="A2">
+                <h3>3 серия: Анатомический парк</h3>
+                <p>Морти внутри тела бездомного спасает парк развлечений от опасных болезней. Пародия на «Парк Юрского периода».</p>
+                <a href="https://adultswim.ru/rick-and-morty/season-1/episode-3" target="_blank" class="watch-link">Смотреть серию</a>
+            </div>
+        </div>
+
+        <div class="episode-column">
+            <div class="episode-box">
+                <h3>4 серия: М. Найт Шьямал-Инопланетяне!</h3>
+                <p>Герои заперты в виртуальной реальности пришельцев-зигерионцев. Рик пытается перехитрить их, создавая симуляции внутри симуляций.</p>
+                <a href="https://adultswim.ru/rick-and-morty/season-1/episode-4" target="_blank" class="watch-link">Смотреть серию</a>
+            </div>
+
+            <div class="episode-box" id="B1">
+                <h3>5 серия: Мисикс и Разрушение</h3>
+                <p>Пока Морти ведет Рика в приключение, семья использует Мисиксов — существ, которые сходят с ума, если не могут выполнить задание Джерри.</p>
+                <a href="https://adultswim.ru/rick-and-morty/season-1/episode-5" target="_blank" class="watch-link">Смотреть серию</a>
+            </div>
+
+            <div class="episode-box" id="B2">
+                <h3>6 серия: Зелье Рика №9</h3>
+                <p>Любовный напиток превращает мир в монстров. Рик и Морти бросают родную вселенную и заменяют своих двойников в другом мире.</p>
+                <a href="https://adultswim.ru/rick-and-morty/season-1/episode-6" target="_blank" class="watch-link">Смотреть серию</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
