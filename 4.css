@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body :nth-child {
     font-family: "Source Code Pro", monospace;
     background-image: url(https://i.pinimg.com/1200x/71/c0/f4/71c0f492f97c86f23b1bd9c450179d8e.jpg);
     background-attachment: fixed;
@@ -46,7 +46,6 @@ h1, h2 {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    backdrop-filter: blur(10px);
 }
 
 .episodes-wrapper {
@@ -107,5 +106,25 @@ a:hover {
 #B1, #B2 {
     display: block;
     padding-bottom: 37.5px;
+}
+table {
+    margin-top: 20px;
+    font-family: "Source Code Pro", monospace;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
 
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid rgba(127, 255, 0, 0.2);
+}
+
+th {
+    color: white;
+    text-shadow: 0 0 5px chartreuse;
+}
+
+tr:hover {
+    background: rgba(127, 255, 0, 0.05); /* Легкий эффект при наведении на строку */
 }
