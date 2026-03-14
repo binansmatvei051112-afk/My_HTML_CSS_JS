@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body :nth-child {
+body {
     font-family: "Source Code Pro", monospace;
     background-image: url(https://i.pinimg.com/1200x/71/c0/f4/71c0f492f97c86f23b1bd9c450179d8e.jpg);
     background-attachment: fixed;
@@ -37,6 +37,11 @@ h1, h2 {
     margin: 20px 0;
 }
 
+a {
+    color: chartreuse;
+    text-decoration: none;
+    font-weight: bold;
+}
 .back-link {
     display: inline-block;
     color: chartreuse;
