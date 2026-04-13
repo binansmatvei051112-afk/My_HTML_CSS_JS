@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://phone-shop.contrainer.ru/test-form" method="get" class="modern-form">
+    
+    <label for="object-id">ID Объекта:</label>
+    <input type="text" id="object-id" name="item_name" placeholder="Например: 101" required>
+    <br>
+
+    <label for="object-class">Цена трубы:</label>
+    <input type="number" name="item_price" placeholder="Например: 1000" value="2000" required>
+    <br>
+    <label for="status">Статус:</label>
+    <select name="status">
+        <option value="ok">Годен</option>
+        <option value="error">Брак</option>
+    </select>
+    <br>
+    <button type="submit">Отправить на сервер</button>
+</form>
+</body>
+</html>

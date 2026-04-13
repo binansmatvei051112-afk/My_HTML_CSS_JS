@@ -1,0 +1,36 @@
+/* Стили для всей страницы */
+body {
+    font-family: "Comic Sans MS";
+    margin: 10px;
+    background-image: url("i (3).webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(30, 252, 30) !important;
+    text-shadow: 1px 1px 2px #000;
+     text-align: left;
+}
+
+/* Красивый заголовок */
+h1 {
+    color: #41c90f;
+    /* Кислотный цвет портала */
+    text-align: left;
+}
+
+/* Стили для параграфов */
+p {
+    line-height: 1.8;
+    /* Чтобы текст не слипался */
+    margin-bottom: 20px;
+}
+
+.photo1 {
+    width: 300px;
+    display: flexbox;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: #8ff51a 3px solid;
+    position: relative;
+}
