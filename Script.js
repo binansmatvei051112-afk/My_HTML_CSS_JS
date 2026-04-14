@@ -66,14 +66,12 @@ runBtn.addEventListener('click', async function () {
     }
     if (files.length > 1) {
         const rawUrl = URL.createObjectURL(files[0]);
+        const rawUrl2 = URL.createObjectURL(files[1]);
 
         const rawPreviews1 = document.getElementById('raw-img-1');
         const rawPreviews2 = document.getElementById('raw-img-2');
-
-        [rawPreviews1, rawPreviews2].forEach(img => {
-            img.src = rawUrl;
-            img.style.filter = 'brightness(0.8)';
-        });
+        rawPreviews1.src = rawUrl;
+        rawPreviews2.src = rawUrl2;
     } else {
         const rawUrl1 = URL.createObjectURL(files[0]);
         const rawPreviews = document.querySelectorAll('.raw-img-preview');
