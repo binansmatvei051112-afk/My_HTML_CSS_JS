@@ -65,20 +65,27 @@ runBtn.addEventListener('click', async function () {
         return;
     }
     if (files.length > 1) {
-        const rawUrl = URL.createObjectURL(files[0]);
+        const rawUrl1 = URL.createObjectURL(files[0]);
         const rawUrl2 = URL.createObjectURL(files[1]);
 
-        const rawPreviews1 = document.getElementById('raw-img-1');
-        const rawPreviews2 = document.getElementById('raw-img-2');
-        rawPreviews1.src = rawUrl;
-        rawPreviews2.src = rawUrl2;
+        const preview1 = document.getElementById('raw-img-1');
+        const preview2 = document.getElementById('raw-img-2');
+
+        preview1.src = rawUrl1;
+        preview2.src = rawUrl2;
+
+
     } else {
         const rawUrl1 = URL.createObjectURL(files[0]);
-        const rawPreviews = document.querySelectorAll('.raw-img-preview');
-        rawPreviews.forEach(img => {
-            img.src = rawUrl1;
-            img.style.filter = 'brightness(0.8)';
-        });
+        const preview1 = document.getElementById('raw-img-1');
+        const raw_img_1 = document.getElementById('Raw-img');
+        const crop_img_1 = document.getElementById('Crop-img');
+        const results_img_1 = document.getElementById('Results-img');
+        preview1.src = rawUrl1;
+
+        raw_img_1.style.display = 'none';
+        crop_img_1.style.display = 'none';
+        results_img_1.style.display = 'none';
     }
     let formdata = new FormData();
     formdata.append('file', files[0]);
@@ -158,13 +165,22 @@ modalFileInput.addEventListener('change', function () {
 
     if (files.length > 0) {
         fileStatus.innerHTML = `Выбрано файлов: <b>${files.length}</b><br><small>${files[0].name} ...</small>`;
-        if (files.length > 1) { openBtn.innerHTML = `Выбрано файлов: <spon id="Number"><b>${files.length}</b></spon><br>${files[0].name},<br>${files[1].name}...`; }
-        else { openBtn.innerHTML = `Выбрано файлов: <spon id="Number"><b>${files.length}</b></spon><br>${files[0].name}`; }
+        
+        // Уменьшаем шрифт для названий файлов в зоне загрузки
+        const fileNamesStyle = "font-size: 11px; color: #94A3B8; display: block; margin-top: 5px; line-height: 1.2;";
+        
+        if (files.length > 1) { 
+            openBtn.innerHTML = `Выбрано файлов: <span id="Number"><b>${files.length}</b></span><br>
+                                 <span style="${fileNamesStyle}">${files[0].name},<br>${files[1].name}...</span>`; 
+        } else { 
+            openBtn.innerHTML = `Выбрано файлов: <span id="Number"><b>${files.length}</b></span><br>
+                                 <span style="${fileNamesStyle}">${files[0].name}</span>`; 
+        }
+        
         triggerBtn.innerText = "ФАЙЛЫ ЗАГРУЖЕНЫ";
         triggerBtn.style.background = "#e1ff00";
         triggerBtn.style.color = "#000";
-        triggerBtn.style.boxShadow = "0px 10px 30px rgba(183, 255, 0, 0.5)"
-
+        triggerBtn.style.boxShadow = "0px 10px 30px rgba(183, 255, 0, 0.5)";
     }
 });
 
