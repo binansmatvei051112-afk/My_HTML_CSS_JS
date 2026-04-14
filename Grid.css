@@ -1,5 +1,4 @@
 :root {
-    --accent: #00E5FF;
     --bg-light: #2E2A5E;
     --text-dim: #94A3B8;
     --bg-main: #121212;
@@ -558,13 +557,16 @@ h3,
 }
 
 .pipe-card {
-    background: rgba(255, 255, 255, 0.05); /* Легкий фон для карточки */
+    background: rgba(255, 255, 255, 0.05);
     margin-bottom: 8px;
     padding: 12px;
     border-radius: 8px;
     border: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
-    animation: slideUp 0.5s ease forwards; /* Применяем анимацию */
-    opacity: 0; /* Изначально скрыты, пока анимация не начнется */
+    animation: slideUp 0.5s ease forwards;
+    opacity: 0;
+}
+@media (max-width: 1024px) {
+    .Container { grid-template-columns: 1fr; }
 }
